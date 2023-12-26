@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--META DATOS-->
+    <meta charset="utf-8" />
+    <title>Portfolio con Bootstrap</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!--ICONOS BOOTSTRAP-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="Style.css" rel="stylesheet" />
+    
+   
+</head>
+<body>
+
+    <!--BARRA DE NAVEGACION-->
+    <div class="principal">
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid ">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-Toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-Toggler">
+                    <a class="navbar-brand" href="#" alt="logo de la pagina web"><i class="bi bi-code"></i></i></a>
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center ">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#sobremi">Acerca de mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#misproyectos">Mis Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--SECCION INICIO-->
+    <section class="inicio d-flex flex-column justify-content-center align-items-center ">
+        <div class="presentacion">
+            <img src="Imagenes/foto mia.png" class="img-fluid" alt="Alternate Text" />
+            <h1>Leandro Alvarez</h1>
+            <h1>Software Developer .Net</h1>
+            <h2>tengo 25 años bla bla bla</h2>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi" class="sobre-mi d-flex flex-column justify-content-center align-items-center">
+        <div class="contenedor">
+            <h1>Acerca de mi</h1>
+            <p>
+                Estudiante en el último año de la
+                Tecnicatura en Programación, motivado
+                por explorar nuevas oportunidades y
+                expandir mi experiencia en proyectos
+                desafiantes. Destaco en la colaboración en
+                equipo, aplicando mi naturaleza creativa y
+                dinámica, cultivada durante mi formación
+                anterior en artes visuales. Poseo una
+                sólida capacidad para abordar problemas
+                con una perspectiva lógica y tranquila,
+                buscando soluciones innovadoras y
+                siempre buscando una bu
+            </p>
+            <a href="#">Descargar mi CV</a>
+        </div>
+    </section>
+
+
+    <section id="misproyectos" class="proyectos d-flex flex-column text-center">
+        <h1 class="titulo">Mis Proyectos</h1>
+        <h2 class="descripcion">Estos son algunos de los proyectos en los que estuve trabajando ultimamente</h2>
+        <!--proyectos-->
+        <div class="container proyectos-contenedor ">
+            <div class="row">
+                <!--PROYECTO N°1 -->
+                <div class="col-12 col-lg-4">
+                    <div class="proyecto">
+                        <img src="Imagenes/klosterball.png" alt="proyecto 1" />
+                        <div class="overlay">
+                            <p> Pinball C++</p>
+                            <div class="iconos">
+                                <a href="https://github.com/leandro-alvarez98/10-mil-juego-" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROYECTO N°2 -->
+                <div class="col-12  col-lg-4">
+                    <div class="proyecto">
+                        <img src="Imagenes/fondoDoctores.svg" alt="proyecto 2" />
+                        <div class="overlay">
+                            <p> BackOffice Clinica</p>
+                            <div class="iconos">
+                                <a href="https://github.com/leandro-alvarez98/10-mil-juego-" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROYECTO N°3 -->
+                <div class="col-12  col-lg-4">
+                    <div class="proyecto">
+                        <img src="Imagenes/DADO.png" alt="proyecto 3" />
+                        <div class="overlay">
+                            <p> Juego 10 Mil</p>
+                            <div class="iconos">
+                                <a href="https://github.com/leandro-alvarez98/10-mil-juego-" target="_blank" rel="noopener noreferrer">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <footer class="s-footer d-flex flex-column justify-content-center align-items-center text-center">
+        <div class="i-procipal">
+            <i class="bi bi-code"></i>
+        </div>
+        <p>Contacto</p>
+        <div class="iconos-redes d-flex flex-wrap align-items-center">
+            <a href="https://www.linkedin.com/in/leandro-alvarez-364686239/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/leandro-alvarez98" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/leandrooalvarezz/" target="_blank"><i class="bi bi-instagram"></i></a>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!--<h1>Hola</h1>
+    <button type="button" class="btn"><i class="bi bi-airplane"></i>Base class</button>-->
+    <!--EJE PRICIPAL (JUSTIFY-CONTENT)-->
+    <!--justify-content-start
+        justify-content-end
+        justify-content-center
+        justify-content-between
+        justify-content-around
+        justify-content-evenly
+        -->
+    <!--EJE PERPENDICULAR/SECUNDARIO  (ALIGN-ITEMS) -->
+    <!--flex-star
+        flex-end
+        center
+        baseline
+        stretch(estirar)
+        -->
+    <!--FLEX-WRAP (PARA QUE SE ACOMODEN LOS ELEMENTOS)
+        FLEX-NOWRAP
+        FLEX-WRAP
+        FLEX-WRAP-REVERSE
+        -->
+    <!--<div class="container">
+        <div class="d-flex justify-content-center">
+            <div class="div">
+                Hola
+            </div>
+            <div class="div">
+                Hola
+            </div>
+            <div class="div">
+                Hola
+            </div>
+        </div>
+    </div>-->
+
+
+
+</body>
+</html>

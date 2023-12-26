@@ -1,0 +1,174 @@
+﻿
+                        /*<!--GOOGLE FONT-- >*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,600;1,200&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif; /*FUENTE PARA TODA LA PAGINA*/
+}
+html {
+    scroll-behavior: smooth;
+}
+.navbar {
+    padding: 2rem;
+}
+.navbar-collapse {
+    align-items:center;
+    justify-content:space-between;
+}
+
+/*OCULTA ALGO SEGUN EL TAMAÑO SI ES MENOR A 767 SE OCULTA EL ICONO(LO SELECCIONO CON LA CLASE)*/
+@media screen and (max-width:767px){ 
+    .navbar-brand{
+        display:none;
+    }
+}
+
+@media screen and (max-width:400px){
+    .overlay p{
+        font-size:18px;    
+
+    }
+    .overlay i {
+        font-size: 40px;
+    }
+}
+/*----------------------------------------SECCION INICIO--------------------------------------------------------------------*/
+.inicio {
+    min-height: 450px;
+    text-align: center;
+    background-color: #f5f6f7;
+}
+.presentacion{
+    padding:3rem;
+}
+.presentacion img{
+    width:220px;
+    height:200px;
+    margin:20px;
+    border-radius:50%;
+}
+.presentacion h1 {
+    font-size: 2.5rem;
+}
+.presentacion h2 {
+    font-size:1.5rem;
+} 
+/*.presentacion a{
+    display:inline-block;
+    text-decoration:none;
+    color:#000;
+    border-radius:30px;
+    padding:10px 20px;
+    border:1px solid #000;
+    margin-top:30px;
+    transition: .5s;
+}
+.presentacion a:hover{
+    background-color:var(--color-azul-verde-oscuro_claro);
+    color:#fff;
+}*/
+/*background-color:#1f1f1d; posible color thema dark*/
+/*----------------------------------------SECCION SOBRE MI--------------------------------------------------------------------*/
+.sobre-mi {
+    height: 600px;
+    padding: 10px;
+    background-color: #151E21;
+    color: white;
+}
+.sobre-mi .contenedor{
+    max-width:800px;
+    text-align:center;
+}
+.sobre-mi .contenedor h1{
+    font-size:2.5rem;
+    padding:15px ;
+    text-decoration: underline;
+    text-decoration-color:white;
+    text-decoration-thickness: 2px;
+    margin-bottom: 1px;
+}
+.sobre-mi .contenedor p{
+    padding:20px;
+}
+.sobre-mi .contenedor a{
+    text-decoration:none;
+}
+/*----------------------------------------SECCION PROYECTOS--------------------------------------------------------------------*/
+.titulo {
+    font-size: 2rem;
+    padding: 15px 4px;
+    text-decoration: underline;
+    text-decoration-color: #808080;
+    text-decoration-thickness: 2px;
+    margin-bottom: 1px;
+}
+.descripcion {
+    padding: 20px;
+    font-size:1.2rem;
+}
+.proyectos {
+    background-color: #f5f6f7;
+    padding: 40px;
+}
+.proyecto{
+    position:relative;
+}
+.proyectos img {
+    height: 380px;
+    width: 380px;
+    border-radius: 20px;
+    display: block;
+    transition: all .2s ease;
+    background-color: #d4d3d3;
+}
+.proyectos-contenedor{
+    padding:60px;
+    margin-bottom:40px;
+}
+.overlay{
+    transition: .2s ease;
+    opacity:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+.overlay p{
+    font-size:25px;
+    font-weight:bold;
+    margin-bottom:0;
+}
+.proyecto:hover img{
+    opacity: 0.2;
+}
+.proyecto:hover .overlay{
+    opacity:1;
+}
+.overlay i{
+    color:black;
+    font-size:60px;
+}
+/*-------------------------------------------FOOTER--------------------------------------------*/
+
+.s-footer {
+    height: 500px;
+    padding: 10px;
+    background-color: #151E21;
+    color: white;
+}
+.i-procipal{
+    font-size:80px;
+    margin: 10px;
+}
+.s-footer p {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin: 30px;
+}
+.iconos-redes a {
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size:20px;
+}
