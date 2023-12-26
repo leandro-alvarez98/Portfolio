@@ -72,7 +72,7 @@
     <Content Include="Imagenes\fondoDoctores.svg" />
     <Content Include="Imagenes\foto mia.png" />
     <Content Include="Imagenes\klosterball.png" />
-    <Content Include="Index.html" />
+    <Content Include="index.html" />
     <Content Include="Style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
